@@ -30,7 +30,8 @@ function App() {
 
     const loader = new GLTFLoader()
     loader.load(
-      'src/assets/3d_model/SheenHighHeel/glTF/SheenHighHeel.gltf',
+      process.env.PUBLIC_URL + '/models/SheenHighHeel/glTF/SheenHighHeel.gltf',
+      // '/models/SheenHighHeel/glTF/SheenHighHeel.gltf',
       gltf => {
         const model = gltf.scene;
         
